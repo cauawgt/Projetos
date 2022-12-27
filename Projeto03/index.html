@@ -24,7 +24,7 @@
       </p>
     </header>
   
-    <form>
+    <form id="form">
 
       <fieldset> <!--Agrupamento de campos: Informações Evento-->
         <div class="fildset-warapper">
@@ -34,7 +34,7 @@
   
           <div class="input-wrapper">
             <label for="event-title">Título do evento <span>(mínimo 8 caracteres)</span></label>
-            <input type="text" id="event-title">
+            <input type="text" id="event-title" required minlength="8">
           </div>
   
           <div class="input-wrapper">
@@ -111,7 +111,12 @@
 
           
       </fieldset>
+
     </form>
+    
+    <footer>
+      <input class="button" type="submit" form="form" value="Salvar evento">
+    </footer>
 
   </div>
   
